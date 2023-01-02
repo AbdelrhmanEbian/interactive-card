@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="stye.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="front">
+        <div class="circle">
+          <span></span>
+          <span></span>
+        </div>
+        <p>9898 0909 8476 4873</p>
+        <div class="spans"><span>felicia liere</span> <span>09/00</span></div>
+      </div>
+      <div class="back">
+        <p>000</p>
+      </div>
+      <div class="content">
+        <div class="confirmed">
+          <img src="images/icon-complete.svg" alt="">
+          <h2>Thank You</h2>
+          <p>We've added your card details</p>
+          <button onclick="contin()">Continue</button>
+        </div>
+        <label for="name">CardHolder name</label>
+        <input type="text" name="" id="name" required />
+        <label for="" class="small name">Wrong format letters only</label>
+        <label for="number">Card number</label>
+        <input type="text" name="" class="number" id="number" required />
+        <label for="" class="small name">Wrong format numbers only</label>
+
+        <div class="expire">
+          <div class="days">
+            <label for="">EXP .DATE(MM/YY)</label>
+            <div class="inuts number">
+              <div class="mont">
+                <input
+                  type="text"
+                  class="number"
+                  placeholder="MM"
+                  name=""
+                  required
+                  id="month"
+                />
+                <label for="" class="small name">Can't blank</label>
+              </div>
+              <div class="yea">
+                <input
+                  type="text"
+                  name=""
+                  class="number"
+                  placeholder="YY"
+                  id="year"
+                  required
+                />
+                <label for="" class="small name">Can't blank</label>
+              </div>
+            </div>
+          </div>
+          <div class="cvv">
+            <label for="cvc">cvc</label>
+            <input
+              type="text"
+              id="cvc"
+              class="number"
+              placeholder="e.g 123"
+              required
+            />
+            <label for="" class="small name">Can't blank</label>
+          </div>
+        </div>
+        <button id="btn" onclick="check()">Confirm</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
